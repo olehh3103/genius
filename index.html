@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -20,7 +25,7 @@
           <li><a class="link" href="#contacts_section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button" class="button"  >Замовити дзвінок</button>
+      <button type="button" class="button">Замовити дзвінок</button>
     </header>
     <main>
       <section id="Modern_bakery_section">
@@ -29,9 +34,9 @@
 
       <section id="traditions_section" class="traditions_section">
         <ul class="benefits_list">
-          <li>Великий попит на ринку</li>
-          <li>Доступні за бюджетом формати</li>
-          <li>Досвідчена управлінська команда</li>
+          <li class="benefits_item">Великий попит на ринку</li>
+          <li class="benefits_item">Доступні за бюджетом формати</li>
+          <li class="benefits_item">Досвідчена управлінська команда</li>
         </ul>
         <h2 class="section_title">Новий формат традицій</h2>
         <p>
@@ -50,7 +55,9 @@
       </section>
 
       <section id="chefs_section">
-        <h2 class="section_title">Наші найкращі <span class="span1">шеф-кухарі</span></h2>
+        <h2 class="section_title">
+          Наші найкращі <span class="span1">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -82,19 +89,35 @@
           <li>
             <article>
               <h3 lang="en">Walrus</h3>
+              <div class="format-text">
+                <p>Площа: до 25 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
               <img src="./images/Walrus.jpg" alt="Walrus" />
             </article>
           </li>
           <li>
             <article>
               <h3 lang="en">Horseshoe</h3>
+              <div class="format-text">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
               <img src="./images/Horseshoe.jpg" alt="Horseshoe" />
             </article>
           </li>
           <li>
             <article>
               <h3 lang="en">Handlebar</h3>
-              <img src="./images/Handlebar.jpg" alt="Handlebar" />
+              <div class="format-text">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
             </article>
           </li>
         </ul>
@@ -102,6 +125,9 @@
 
       <section id="contacts_section">
         <h2 class="section_title">Приєднуйся до мережі пекарень</h2>
+        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <button type="button" class="button">Замовити дзвінок</button>
+        <p></p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1762858545755!5m2!1sen!2sua"
           width="600"
@@ -120,22 +146,30 @@
         </a>
 
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a style="text-decoration: none;" href="#">Франшиза</a></li>
+          <li><a style="text-decoration: none;" href="#">Наші традиції</a></li>
+          <li><a style="text-decoration: none;" href="#">Формати</a></li>
+          <li><a style="text-decoration: none;" href="#">Контакти</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+380960000007" class="link">+ 38 (096) 000 00 07</a></li>
-
           <li>
-            <a href="mailto:shopbakery@gmail.com" class="link">shopbakery@gmail.com</a>
+            <a href="tel:+380960000007" class="link">+ 38 (096) 000 00 07</a>
           </li>
 
           <li>
-            <a href="https://share.google/c2d2XGbanhhwPuUSY" target="_blank" class="link">
+            <a href="mailto:shopbakery@gmail.com" class="link"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://share.google/c2d2XGbanhhwPuUSY"
+              target="_blank"
+              class="link"
+            >
               Україна, м. Київ, вул. Січових Стрільців 54
             </a>
           </li>
